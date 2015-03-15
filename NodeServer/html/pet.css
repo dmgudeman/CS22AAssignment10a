@@ -1,0 +1,41 @@
+.day {
+	background-color:#98ff70;
+	text-align:center;
+	transition:background-color 20s;   
+	-webkit-transition:background-color 20s;  /* Safari */
+	}
+.night {
+    background-color:#000011;
+	text-align:center;
+    transition:background-color 20s;   
+	-webkit-transition:background-color 20s;  /* Safari */
+	}	  
+.disappear {
+	display: none 
+	}
+		
+.hide { 
+	visibility: hidden
+	}		
+.move {
+	animation: moving 1s infinite alternate;
+	-webkit-animation: moving 1s infinite alternate;/* Chrome and Safari */	
+}
+						
+@keyframes moving {
+            from {
+	       transform: rotate(-15deg);
+            }
+            to {
+               transform: rotate(15deg);
+            }
+}
+
+@-webkit-keyframes moving {
+            from {
+	        -webkit-transform: rotate(-15deg);
+            }
+            to {
+                -webkit-transform: rotate(15deg);
+            }
+}
